@@ -1,4 +1,4 @@
-import useShoppingCart from 'use-shopping-cart'
+import { useShoppingCart } from 'use-shopping-cart'
 
 export default function buy() {
     const { formattedTotalPrice, redirectToCheckout, cartCount } = useShoppingCart()

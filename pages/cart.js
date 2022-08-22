@@ -8,7 +8,9 @@ function cart() {
       {/* Renders the products */}
       {Object.entries(cartDetails).map((cartitem) => {
         return(
-          <p>{cartitem.name}</p>
+          <div key={cartitem.id}>
+            <p>{cartitem.name}</p>
+          </div>
         )
       })}      
 

@@ -1,6 +1,6 @@
 import { useShoppingCart } from 'use-shopping-cart'
 
-export default function cart() {
+function cart() {
   const { formattedTotalPrice, redirectToCheckout, cartCount, cartDetails } = useShoppingCart()
 
   return (
@@ -21,3 +21,5 @@ export default function cart() {
     </div>
   )
 }
+
+export default cart()

@@ -1,8 +1,8 @@
 import { useShoppingCart } from 'use-shopping-cart'
+import React from 'react'
 
-function cart() {
+export default function cart() {
   const { formattedTotalPrice, redirectToCheckout, cartCount, cartDetails } = useShoppingCart()
-
   return (
     <div>
       {/* Renders the products */}
@@ -23,5 +23,3 @@ function cart() {
     </div>
   )
 }
-
-export default cart()

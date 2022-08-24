@@ -14,8 +14,8 @@ function MyApp({ Component, pageProps }) {
       cartMode="client-only"
       stripe={stripeKey}
       currency="AUD"
-      successUrl="http://localhost:3000/success"
-      cancelUrl="http://localhost:3000"
+      successUrl="https://e-canteen.vercel.app/success"
+      cancelUrl="https://e-canteen.vercel.app"
       allowedCountries={['AU']}
       billingAddressCollection={true}
       shippingAddressCollection={false}

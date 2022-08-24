@@ -167,7 +167,7 @@ export default function Navbar() {
                         <p>{formattedTotalPrice}</p>
                       </div>
                       <div className="flex justify-between text-base font-medium text-gray-900">
-                        <p>Carttotal</p>
+                        <p>Cart total</p>
                         <p>{cartCount}</p>
                       </div>
                       <div className="mt-6 flex justify-center">

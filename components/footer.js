@@ -12,10 +12,7 @@ function Footer() {
                         <a href="#" className="mr-4 hover:underline md:mr-6 ">About</a>
                     </li>
                     <li>
-                        <a href="#" className="mr-4 hover:underline md:mr-6">Privacy Policy</a>
-                    </li>
-                    <li>
-                        <a href="#" className="mr-4 hover:underline md:mr-6 ">Licensing</a>
+                        <a href="#" className="mr-4 hover:underline md:mr-6">Support</a>
                     </li>
                     <li>
                         <a href='https://github.com/birdboy307/PHS-eCantee'>

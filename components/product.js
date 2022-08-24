@@ -1,4 +1,5 @@
 import { useShoppingCart, formatCurrencyString  } from 'use-shopping-cart'
+import { toast } from 'react-toastify';
 
 export default function Product(props) {  
   
@@ -9,6 +10,11 @@ export default function Product(props) {
     currency: "AUD",
     language: 'en-AU'
   })
+
+  const addToCart = () => {
+    addItem(product)
+    toast.success('Added to cart')
+  }
 
   const product = {id: props.id, name: props.name, image: props.image, price: props.price}
   
@@ -24,7 +30,7 @@ export default function Product(props) {
             {price}
           </p>
           <button
-          onClick={() => addItem(product)}
+          onClick={addToCart}
           aria-label={`Buy a ${props.name}`}
           type="button" className="w-1/2 text-white bg-blue-700 hover:bg-blue-800 font-medium rounded-lg text-sm px-3 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700">
             <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>

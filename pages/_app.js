@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
       successUrl="http://localhost:3000/success"
       cancelUrl="http://localhost:3000"
       allowedCountries={['AU']}
-      billingAddressCollection={false}
+      billingAddressCollection={true}
       shippingAddressCollection={false}
     >
       <Layout>

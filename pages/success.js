@@ -1,6 +1,15 @@
 import Link from 'next/link'
+import { useShoppingCart } from 'use-shopping-cart'
 
 export default function success() {
+    const { clearCart } = useShoppingCart
+    
+    const onLoad = () => {
+        clearCart()
+    }
+    
+    onLoad()
+    
     return (
         <div className='flex justify-center bg-gray-50 h-screen items-center text-center'>
             <div className="grid grid-rows-3 gap-2">
